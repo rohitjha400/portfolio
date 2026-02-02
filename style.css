@@ -1,0 +1,126 @@
+:root {
+    --bg: #0f172a;
+    --text: #ffffff;
+    --card: #1e293b;
+    --accent: #38bdf8;
+    
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --blur: blur(12px);
+}
+
+.light {
+    --bg: #f8fafc;
+    --text: #020617;
+    --card: #e2e8f0;
+    --accent: #0284c7;
+
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    z-index: 100;
+}
+
+
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.hero span {
+    color: var(--accent);
+}
+.buttons {
+    margin-top: 20px;
+}
+.buttons a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: black;
+    font-weight: bold;
+}
+
+.buttons .outline {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.skill-box {
+    padding: 25px;
+}
+
+.skill-box span {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 18px;
+    border-radius: 999px;
+    margin: 8px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.skill-box span:hover {
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.25);
+    transform: translateY(-4px) scale(1.05);
+}
+.project-card {
+    padding: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.25);
+}
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px; /* for fixed header */
+}
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
