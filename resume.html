@@ -10,27 +10,75 @@
 
 <header>
     <h2>Resume</h2>
-    <a href="index.html" class="back">← Back</a>
+    <div>
+        <a href="index.html" class="back-btn">← Back</a>
+        <button onclick="window.print()" class="download-btn">⬇ Download PDF</button>
+    </div>
 </header>
 
-<section class="resume">
+<section class="resume-container glass">
+
     <h1>Rohit Kumar Jha</h1>
-    <p>Aspiring Software Developer</p>
+    <p class="subtitle">
+        Aspiring Software Developer | Web Development & AI Enthusiast
+    </p>
 
-    <h3>Education</h3>
-    <p>B.Tech in Information Technology<br>
-    MCKV Institute of Technology (2023–Present)</p>
+    <div class="resume-section">
+        <h3>Profile</h3>
+        <p>
+            Aspiring Software Developer skilled in JavaScript, Python, HTML & CSS.
+            Strong interest in AI tools, automation, and real-world problem solving.
+            Motivated learner eager to contribute to impactful projects.
+        </p>
+    </div>
 
-    <h3>Projects</h3>
-    <ul>
-        <li>AI Resume Analyzer</li>
-        <li>Attendance Calculator</li>
-        <li>Web Applications (JavaScript)</li>
-    </ul>
+    <div class="resume-section">
+        <h3>Education</h3>
+        <p>
+            <strong>B.Tech in Information Technology</strong><br>
+            MCKV Institute of Technology, Liluah, West Bengal<br>
+            <em>2023 – Present</em>
+        </p>
+    </div>
 
-    <h3>Languages</h3>
-    <p>English | Hindi | Bengali</p>
+    <div class="resume-section">
+        <h3>Skills</h3>
+        <ul class="resume-skills">
+            <li>JavaScript (DOM, Fetch API, JSON)</li>
+            <li>Python (Scripting, Data Handling)</li>
+            <li>HTML & CSS (Responsive UI, Flexbox, Grid)</li>
+            <li>Git & GitHub (Version Control)</li>
+            <li>REST APIs & AI API Integration</li>
+            <li>Machine Learning Basics</li>
+            <li>Node.js</li>
+            <li>Flutter</li>
+        </ul>
+    </div>
+
+    <div class="resume-section">
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>AI Resume Analyzer</strong> – AI-based resume screening tool</li>
+            <li><strong>Attendance Calculator</strong> – JavaScript web application</li>
+            <li><strong>Web Applications</strong> – Frontend projects using JS</li>
+        </ul>
+    </div>
+
+    <div class="resume-section">
+        <h3>Languages</h3>
+        <p>English • Hindi • Bengali</p>
+    </div>
+
+    <div class="resume-section contact">
+        <h3>Contact</h3>
+        <p>📧 kumarjharohit664@gmail.com</p>
+        <p>📍 Rishra, West Bengal</p>
+        <p>💻 github.com/rohitjha400</p>
+        <p>🔗 linkedin.com/in/rohit-kumar-jha-314771290</p>
+    </div>
+
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
